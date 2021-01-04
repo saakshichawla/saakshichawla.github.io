@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///C:/Users/Nandos-ASUS/Desktop/Saakshi_website/Saakshi%20Jagdish%20Chawla.html -->
+<html lang="en-US" class="wf-ftnk-n4-active wf-ftnk-n7-active wf-ysxc-n7-active wf-ysxc-n5-active wf-nqdy-n4-active wf-ysxc-n3-active wf-nqdy-n7-active wf-ysxc-i3-active wf-nqdy-n3-active wf-ysxc-n6-active wf-ysxc-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./index_files/e7fb1b89a0"></script><script src="./index_files/nr-1184.min.js.download"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="./index_files/e7fb1b89a0(1)"></script><script src="./index_files/nr-1184.min.js(1).download"></script><script async="" src="./index_files/analytics.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Saakshi Jagdish Chawla">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf3.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/e82f7db4-e55f-4904-be13-c12215dca0cf_rwc_0x0x3447x2291x3447.jpg?h=bf9d1465215a9d9ace31f6bd2469b92d">
+      <meta name="robots" content="noindex">
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
+        <link rel="apple-touch-icon" href="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c97f6eb3-2631-4a23-a9e3-a9c65956262d_carw_1x1x180.jpg?h=fbf4695d11b2d426c62fe995afa169d5">
+      <link rel="stylesheet" href="./index_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./index_files/0f555f8eefca0165146a4d80a8d69ae71601366351.css" type="text/css">
+    <link rel="canonical" href="https://saakshi.myportfolio.com/work">
+      <title>Saakshi Jagdish Chawla</title>
+    <script type="text/javascript" src="./index_files/5B9wARG7h3zmKruoaI2GLgwgU1-4zq_OwwhQUB5rZCXfe76ffHYEBsJzwD9oFDIDWhJ3wAm8ZRy852sc5eFcFRJa5A9tZRwXZcjoFD4qZeju5QiK5Q63w2S-mkG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh-AmaOcuoSeNkieZzde8z.download" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script><style type="text/css">@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style>
+<style type="text/css">@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style><style type="text/css"></style><style type="text/css"></style></head>
+        <body class="link-transition disable-download">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container js-editable-target editable" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="https://saakshi.myportfolio.com/resume">Resume</a></div>
+                <div class="gallery-title"><a href="https://saakshi.myportfolio.com/work" class="active">Work</a></div>
+          </nav>
+        <div class="social pf-nav-social js-editable-target editable" data-context="theme.nav" data-section="Social Icons" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="mailto:saakshi.jc@gmail.com">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                        <g>
+                          <path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <header class="site-header js-site-header js-editable-target editable  js-fixed-nav js-editable-target editable" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container js-editable-target editable" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="https://saakshi.myportfolio.com/resume">Resume</a></div>
+                <div class="gallery-title"><a href="https://saakshi.myportfolio.com/work" class="active">Work</a></div>
+        </nav>
+        <div class="logo-wrap js-editable-target editable" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-text  ">
+              <a href="https://saakshi.myportfolio.com/work" class="preserve-whitespace">Saakshi Chawla</a>
+
+          </div>
+        </div>
+        <div class="social pf-nav-social js-editable-target editable" data-context="theme.nav" data-section="Social Icons" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="mailto:saakshi.jc@gmail.com">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                        <g>
+                          <path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+        <div class="masthead js-masthead-fixed js-editable-target editable" data-context="page.masthead" data-hover-hint="mastheadOptions" data-hover-hint-placement="top-start">
+          <div class="masthead-contents">
+            <div class="masthead-text js-masthead-text">
+              <div class="js-editable-target editable" data-context="page.masthead" data-hover-hint="mastheadTitle" data-section="Masthead Title"><h1 decorator="inlineTextEditable" contenteditable="false" class="js-inline-text-editable preserve-whitespace main-text rich-text module-text" data-text-keypath="customizations.masthead.title.text" value="A comprehensive portfolio of academic and creative work completed over the duration of the B.Arch course at RVCA, Bangalore (2016-2020)">A comprehensive portfolio of academic and creative work completed over the duration of the B.Arch course at RVCA, Bangalore (2016-2020)</h1></div>
+              <div class="js-editable-target editable" data-context="page.masthead" data-hover-hint="mastheadText" data-section="Masthead Text"><p decorator="inlineTextEditable" contenteditable="false" class="js-inline-text-editable preserve-whitespace main-text rich-text module-text" data-text-keypath="page.masthead.text.text" value=""></p></div>
+              <div class="masthead-buttons">
+                
+              </div>
+                <div class="masthead-arrow-container js-masthead-arrow js-editable-target editable" data-context="page.masthead" data-section="Scroll Down Arrow" data-hover-hint="scrollDownArrow">
+                  <div class="masthead-arrow"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="masthead-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+          <section class="project-covers" data-context="page.gallery.covers">
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://saakshi.myportfolio.com/academic-projects" data-context="pages" data-identity="id:p5e78fdc68dff3397eabed463ba6439a7523c9eba6e4dfe6e9b570" data-hover-hint="galleryPageCover" data-hover-hint-id="p5e78fdc68dff3397eabed463ba6439a7523c9eba6e4dfe6e9b570">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./index_files/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x3701.png" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x640.png?h=e29fab96dff2d5145c85be9ca8f6dd8a 640w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x1280.png?h=3900817d363d3fcc2aff895fe675c468 1280w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x1366.png?h=a17d13ce26037b8334dd500ba17db637 1366w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x1920.png?h=be4f19449229c5fcb9c3c20ce50aba41 1920w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x2560.png?h=469ad88700aaf464ff21d8a31044adaa 2560w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/cdde0992-faa5-43f4-ab99-e89f00894b68_rwc_201x0x3701x2894x3701.png?h=20217816cc1c036121c5a912d232c116 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 2)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Academic Projects</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://saakshi.myportfolio.com/working-drawings" data-context="pages" data-identity="id:p5e78fc200961c486f6e720bfdbff750b3d490049ebc636565c694" data-hover-hint="galleryPageCover" data-hover-hint-id="p5e78fc200961c486f6e720bfdbff750b3d490049ebc636565c694">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./index_files/c444db2f-dda4-4493-9d91-df01edf37af4_car_202x158.png" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c444db2f-dda4-4493-9d91-df01edf37af4_carw_202x158x640.png?h=147b7e15b0a1e53a2fd918a5ad049d82 640w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c444db2f-dda4-4493-9d91-df01edf37af4_carw_202x158x1280.png?h=facf13ab988d1b08e6048c66f54a31bb 1280w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c444db2f-dda4-4493-9d91-df01edf37af4_carw_202x158x1366.png?h=0639f2ee4e556a742015d83c6e20fb76 1366w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c444db2f-dda4-4493-9d91-df01edf37af4_carw_202x158x1920.png?h=9a30973425bb0cc912b88db631630547 1920w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c444db2f-dda4-4493-9d91-df01edf37af4_carw_202x158x2560.png?h=703d8c9997997ce10a541cf3eaa9871b 2560w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c444db2f-dda4-4493-9d91-df01edf37af4_carw_202x158x5120.png?h=c7b8f6179f357b57e42856a1fedf56f8 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 2)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Working Drawings</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://saakshi.myportfolio.com/internshipmiscellaneous" data-context="pages" data-identity="id:p5e78f69b4334c86ac96fc4112801cd91e11dc2aaefd481abab17f" data-hover-hint="galleryPageCover" data-hover-hint-id="p5e78f69b4334c86ac96fc4112801cd91e11dc2aaefd481abab17f">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./index_files/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_car_202x158.png" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_carw_202x158x640.png?h=8d68b6a36069392abd2eb3bc89bbeb04 640w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_carw_202x158x1280.png?h=ab7904f29cd1393c58768230aae3b67c 1280w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_carw_202x158x1366.png?h=11e880e71a7d7f4e25b4238324f01b0c 1366w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_carw_202x158x1920.png?h=9a438a45f1feadbba626c0e67cc15e90 1920w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_carw_202x158x2560.png?h=6c2ac7efe3754dd4f2f29b21591ba121 2560w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d47fc7f4-7fff-40aa-8c6e-6dbf54de7153_carw_202x158x5120.png?h=9b24ae061c707e1068e400ed2f440161 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 2)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Internship</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://saakshi.myportfolio.com/graphic-design-1" data-context="pages" data-identity="id:p5e721671a187c511f69b742c7639e044a5b7e85af2ad208d294c6" data-hover-hint="galleryPageCover" data-hover-hint-id="p5e721671a187c511f69b742c7639e044a5b7e85af2ad208d294c6">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./index_files/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x3701.png" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x640.png?h=f9e3e2c1391798251ff6594a3ea51bd3 640w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x1280.png?h=95b0c53095e29c107987acdbebbcff1d 1280w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x1366.png?h=aafb815f46a2d3962a6c873a5de8d37f 1366w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x1920.png?h=422a6274e1c697f5262aec19d1c80a0e 1920w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x2560.png?h=dd7af0df0331a94e23f89a7965bae6a9 2560w, https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5b4d8cf7-8457-495d-aece-cfa1a4df2369_rwc_201x0x3701x2894x3701.png?h=be20cb7a043fed75037c6076d401e842 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 2)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Graphic Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://saakshi.myportfolio.com/connected-by-design" data-context="pages" data-identity="id:p5f6902d3cb2b7d98c011bd6fd7d4c3a1cb67447e9c417366d62df" data-hover-hint="galleryPageCover" data-hover-hint-id="p5f6902d3cb2b7d98c011bd6fd7d4c3a1cb67447e9c417366d62df">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./index_files/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x1181.png" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x640.png?h=f5a915f9cd4e84fc3419d3167aeca530 640w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x1181.png?h=d8458c96da0087a45890325caf381955 1280w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x1181.png?h=d8458c96da0087a45890325caf381955 1366w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x1181.png?h=d8458c96da0087a45890325caf381955 1920w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x1181.png?h=d8458c96da0087a45890325caf381955 2560w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/26d2f88d-34fb-4b49-a50a-11d1f6acf114_rwc_0x128x1181x923x1181.png?h=d8458c96da0087a45890325caf381955 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 2)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Work Experience</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://saakshi.myportfolio.com/street-photography" data-context="pages" data-identity="id:p5f72dae5c0734d0bb65b5be929ae1711db009a9824b06df42a442" data-hover-hint="galleryPageCover" data-hover-hint-id="p5f72dae5c0734d0bb65b5be929ae1711db009a9824b06df42a442">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./index_files/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x3701.png" srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x640.png?h=f3312f2f5c31e96f3fbb42b9389198bd 640w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x1280.png?h=d68f0a8ea46a0832481b776b443eb649 1280w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x1366.png?h=322104e0b7a98f60ce1166a474855561 1366w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x1920.png?h=4b5fe770a9478de1175d7961ce6e5644 1920w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x2560.png?h=5c99946bb725cb3460d658de2065a2a8 2560w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/6c0d4b1f-233c-4ec2-98a8-e4da25cc3655_rwc_201x0x3701x2894x3701.png?h=764d829044d3d5854b2707f0f7655e0e 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 2)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Street Photography</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          </section>
+              <section class="back-to-top js-editable-target editable" data-hover-hint="backToTop">
+                <a href="https://saakshi.myportfolio.com/#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+              </section>
+              <a class="back-to-top-fixed js-editable-target editable js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="https://saakshi.myportfolio.com/#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+                <g>
+                  <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+                    c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+                    c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+                    c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+                    c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+                    c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+                    c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+                </g>
+                </svg>
+              </a>
+              <footer class="site-footer js-editable-target editable" data-hover-hint="footer">
+                <div class="footer-text">
+                  Powered by <a href="http://portfolio.adobe.com/" target="_blank">Adobe Portfolio</a>
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":22,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5e6fd416517cdb8b5c0f5bc4f569112f0ba5cbc0af491f1a783ba","theme":{"name":"marta"},"pageTransition":true,"linkTransition":true,"disableDownload":true,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false},"googleAnalytics":{"trackingCode":"UA-179267406-1","anonymization":false}};</script>
+  <script type="text/javascript" src="./index_files/translations"></script>
+  <script type="text/javascript" src="./index_files/main.js.download"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"></div>
+      </div>
+    </div>
+  </div><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
