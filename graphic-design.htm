@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///Users/devikavishnu/Desktop/Saakshi_website/Saakshi%20Jagdish%20Chawla%20-%20Graphic%20Design.html -->
+<html lang="en-US" class="wf-ftnk-n4-active wf-ftnk-n7-active wf-nqdy-n3-active wf-nqdy-n4-active wf-nqdy-n7-active wf-ysxc-i3-active wf-ysxc-n3-active wf-ysxc-n4-active wf-ysxc-n5-active wf-ysxc-n6-active wf-ysxc-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./graphic-design_files/e7fb1b89a0"></script><script src="./graphic-design_files/nr-1184.min.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="./graphic-design_files/e7fb1b89a0(1)"></script><script src="./graphic-design_files/nr-1184.min.js.download"></script><script async="" src="./graphic-design_files/analytics.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Saakshi Jagdish Chawla - Graphic Design">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf3.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/e82f7db4-e55f-4904-be13-c12215dca0cf_rwc_0x0x3447x2291x3447.jpg?h=bf9d1465215a9d9ace31f6bd2469b92d">
+      <meta name="robots" content="noindex">
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
+        <link rel="apple-touch-icon" href="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/c97f6eb3-2631-4a23-a9e3-a9c65956262d_carw_1x1x180.jpg?h=fbf4695d11b2d426c62fe995afa169d5">
+      <link rel="stylesheet" href="./graphic-design_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./graphic-design_files/717829a48b5fad64747b7bf2f577ae731601366351.css" type="text/css">
+    <link rel="canonical" href="https://saakshichawla.github.io/graphic-design-1">
+      <title>Saakshi Jagdish Chawla - Graphic Design</title>
+    <script type="text/javascript" src="./graphic-design_files/5B9wARG7h3zmKruoaI2GLgwgU1-4zq_OwwhQUB5rZCXfe76ffHYEBsJzwD9oFDIDWhJ3wAm8ZRy852sc5eFcFRJa5A9tZRwXZcjoFD4qZeju5QiK5Q63w2S-mkG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh-Am.download" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script><style type="text/css">@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style>
+<style type="text/css">@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/26af7d/000000000000000077359a20/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/497298/000000000000000077359a1e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:nqdy;src:url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/9f0f3f/000000000000000077359a0f/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/4d6281/00000000000000007735a189/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c4a610/00000000000000007735a18b/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/32b0e4/00000000000000007735a185/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/6f175d/00000000000000007735a18f/30/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/2180b4/00000000000000007735a193/30/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:ysxc;src:url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/73dbad/00000000000000007735a197/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style><style type="text/css"></style><style type="text/css"></style></head>
+        <body class="link-transition disable-download">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container js-editable-target editable" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="https://saakshichawla.github.io/resume">Resume</a></div>
+                <div class="gallery-title"><a href="https://saakshichawla.github.io/">Work</a></div>
+          </nav>
+        <div class="social pf-nav-social js-editable-target editable" data-context="theme.nav" data-section="Social Icons" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="mailto:saakshi.jc@gmail.com">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                        <g>
+                          <path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <header class="site-header js-site-header js-editable-target editable js-fixed-nav on-scroll" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container js-editable-target editable" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="https://saakshichawla.github.io/resume">Resume</a></div>
+                <div class="gallery-title"><a href="https://saakshichawla.github.io/">Work</a></div>
+        </nav>
+        <div class="logo-wrap js-editable-target editable" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-text  ">
+              <a href="https://saakshichawla.github.io/" class="preserve-whitespace">Saakshi Chawla</a>
+
+          </div>
+        </div>
+        <div class="social pf-nav-social js-editable-target editable" data-context="theme.nav" data-section="Social Icons" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+          <ul>
+                  <li>
+                    <a href="mailto:saakshi.jc@gmail.com">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                        <g>
+                          <path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+          </ul>
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+  <div class="page-container js-editable-target editable" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content js-editable-target editable" data-context="pages" data-identity="id:p5e721671a187c511f69b742c7639e044a5b7e85af2ad208d294c6" data-hover-hint="pageHeader" data-hover-hint-id="p5e721671a187c511f69b742c7639e044a5b7e85af2ad208d294c6">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">Graphic Design</h1>
+            <p class="description"></p>
+        </header>
+      <div class="page-content js-page-content js-editable-target editable" data-context="pages" data-identity="id:p5e721671a187c511f69b742c7639e044a5b7e85af2ad208d294c6" data-section="Page Info">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 100px;
+  width: 60%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/794a7c84-6dc3-4fc1-84a4-615868f97992.png?h=26ece6694cce750ee6deeed779806a7b">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/794a7c84-6dc3-4fc1-84a4-615868f97992_rw_1920.png" width="1920" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/794a7c84-6dc3-4fc1-84a4-615868f97992_rw_600.png?h=e4439e42e0def017a8fa2930d89b70e6 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/794a7c84-6dc3-4fc1-84a4-615868f97992_rw_1200.png?h=7eef7276dfbc6848f2b1ad5a5f01ab79 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/794a7c84-6dc3-4fc1-84a4-615868f97992_rw_1920.png?h=9c6603a5e33e860b5d458d2c15533ed4 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 97">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/bc4d2a3a-392d-4905-9c50-44fcaf730442.png?h=cad6375adda19cad165e4a893131ff02">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/bc4d2a3a-392d-4905-9c50-44fcaf730442_rw_600.png" width="500" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/bc4d2a3a-392d-4905-9c50-44fcaf730442_rw_600.png?h=92d115f3d97460245a6bd4ad9cbe59c4 500w," sizes="(max-width: 500px) 100vw, 500px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600"></span></span></span><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Logo&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Illustrator)</span></span></span></span></p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color"></span></span></span></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 103">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 47%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/a957f624-77fc-4b22-ba3c-61cf12eff245.png?h=dcdff7608c494f9d92c544c942628764">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/a957f624-77fc-4b22-ba3c-61cf12eff245_rw_600.png" width="500" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/a957f624-77fc-4b22-ba3c-61cf12eff245_rw_600.png?h=8de2cad6864470a2af2019af3f3757d5 500w," sizes="(max-width: 500px) 100vw, 500px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600"></span></span></span><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Logo&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color"></span></span></span></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1654000000">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d89b643a-5ba1-4a62-89a1-db0cf39ce4ab.png?h=dd4d8f9a34fe5c23f4b36289ea6febe6">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/d89b643a-5ba1-4a62-89a1-db0cf39ce4ab_rw_1920.png" width="1654" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d89b643a-5ba1-4a62-89a1-db0cf39ce4ab_rw_600.png?h=c4f2786c16c9af70d10c6ea6550435bd 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d89b643a-5ba1-4a62-89a1-db0cf39ce4ab_rw_1200.png?h=3773fee05539a0347d67a097cdfb5c84 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d89b643a-5ba1-4a62-89a1-db0cf39ce4ab_rw_1920.png?h=7fa1a88f776988e4839e399ebfca6dad 1654w," sizes="(max-width: 1654px) 100vw, 1654px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Koi Fish</span></span><span style="font-family:ysxc; font-weight:500">&nbsp;<span style="color:#000000" class="texteditor-inline-color">Illustration</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color">(Drawn on Procreate)</span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1753685024">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/2be6262a-4378-4d69-8543-91ade970519b.png?h=5777fea7767418584a82acf86f4bde71">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/2be6262a-4378-4d69-8543-91ade970519b_rw_1920.png" width="1920" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/2be6262a-4378-4d69-8543-91ade970519b_rw_600.png?h=3550733d5d9a0a13ea57f8ff33b862e7 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/2be6262a-4378-4d69-8543-91ade970519b_rw_1200.png?h=f75b6730ec7b0f73db03df4eb0854ae0 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/2be6262a-4378-4d69-8543-91ade970519b_rw_1920.png?h=d9da452d9171d912d3b5b2bc5db5b732 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:600"><span style="color:#000000" class="texteditor-inline-color">Jelly Fish</span>&nbsp;</span><span style="font-family:ysxc; font-weight:500"><span style="color:#000000" class="texteditor-inline-color">Illustration</span></span><span style="font-family:ysxc; font-weight:600"></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Drawn on Procreate)</span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 97">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/69b9b4b2-2b38-4764-8ea5-22cd64b1cd6f.jpg?h=b4ff527a075e72342660dc58cfa17363">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/69b9b4b2-2b38-4764-8ea5-22cd64b1cd6f_rw_1920.jpg" width="1770" srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/69b9b4b2-2b38-4764-8ea5-22cd64b1cd6f_rw_600.jpg?h=741246254360e4d3bdc73cab457f5757 600w,https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/69b9b4b2-2b38-4764-8ea5-22cd64b1cd6f_rw_1200.jpg?h=9a1a424682393fc308acc59445539d96 1200w,https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/69b9b4b2-2b38-4764-8ea5-22cd64b1cd6f_rw_1920.jpg?h=4361d4271e69a07d7d85dbcea478fb40 1770w," sizes="(max-width: 1770px) 100vw, 1770px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600"></span></span></span><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Logo&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Illustrator)</span></span></span></span></p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color"></span></span></span></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 103">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 51%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/781ce251-ac6d-4641-b7dd-bcb6eb5e6ae3.JPG?h=17a7879c21b8ea2e9abbf28e3adab672">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/781ce251-ac6d-4641-b7dd-bcb6eb5e6ae3_rw_1920.JPG" width="1618" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/781ce251-ac6d-4641-b7dd-bcb6eb5e6ae3_rw_600.JPG?h=2652f280ca008b755fb55533938f2ad5 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/781ce251-ac6d-4641-b7dd-bcb6eb5e6ae3_rw_1200.JPG?h=28e7bfd2f5f3842ed76ca853f961e612 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/781ce251-ac6d-4641-b7dd-bcb6eb5e6ae3_rw_1920.JPG?h=07c749cc0d28c2befc7445d0bc321d86 1618w," sizes="(max-width: 1618px) 100vw, 1618px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600"></span></span></span><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Logo&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Illustrator)</span></span></span></span></p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color"></span></span></span></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-center">
+      <div class="tree-child-wrapper" style="flex: 49">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 52%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/159bd11a-3151-4678-a614-b7d91cc3cc95.png?h=cbcaa6fb2c0952e2c4dccf8620cedb48">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/159bd11a-3151-4678-a614-b7d91cc3cc95_rw_1920.png" width="1654" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/159bd11a-3151-4678-a614-b7d91cc3cc95_rw_600.png?h=a31e31679eabd9f4490c15d656c79598 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/159bd11a-3151-4678-a614-b7d91cc3cc95_rw_1200.png?h=a7c2f5eefb65925644b92b06cc09f57c 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/159bd11a-3151-4678-a614-b7d91cc3cc95_rw_1920.png?h=afccc7c18df2f5495fd85ad16a3d0d64 1654w," sizes="(max-width: 1654px) 100vw, 1654px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Invite&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 51">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 49%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5e1e0680-d426-40dd-9457-c4f089007f34.png?h=ba6399b4228623cff76f2d803b0281ed">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/5e1e0680-d426-40dd-9457-c4f089007f34_rw_1200.png" width="1080" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5e1e0680-d426-40dd-9457-c4f089007f34_rw_600.png?h=e35b89e37b5a8ed0417eeebb7c71b157 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/5e1e0680-d426-40dd-9457-c4f089007f34_rw_1200.png?h=effffcb19b253cfe8df7704f408cc0a8 1080w," sizes="(max-width: 1080px) 100vw, 1080px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Poster&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 49">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 51%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/fdcea524-a085-47d0-ae6b-982e7850c412.png?h=be9a2c79ebe69994a96a920b94117379">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/fdcea524-a085-47d0-ae6b-982e7850c412_rw_600.png" width="500" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/fdcea524-a085-47d0-ae6b-982e7850c412_rw_600.png?h=4cd175a98985e412fe5a32ea3a527cf3 500w," sizes="(max-width: 500px) 100vw, 500px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600"></span></span></span><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Logo&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Illustrator)</span></span></span></span></p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color"></span></span></span></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 51">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 50px;
+  width: 49%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/55b37458-5359-4292-b0af-95f48fff1128.png?h=856c63157d51212ff4591bb28c5b6959">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/55b37458-5359-4292-b0af-95f48fff1128_rw_1200.png" width="1080" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/55b37458-5359-4292-b0af-95f48fff1128_rw_600.png?h=9c56722bd5c4c9fbf2fa83fa97e5a132 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/55b37458-5359-4292-b0af-95f48fff1128_rw_1200.png?h=9bc84cea29be44a1e5be8e36a96fdc26 1080w," sizes="(max-width: 1080px) 100vw, 1080px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><font color="#000000" face="ysxc"><span style="font-size: 12px;"><b>Logo</b></span></font>​​​​​​​<br></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p><font color="#000000" face="ysxc"><span style="font-size: 12px;"><b></b></span></font></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 49">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 51%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d506509f-3560-45f7-b751-5463b6e1b575.png?h=e1a82008a86e3109c9eea5c45bda5f02">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/d506509f-3560-45f7-b751-5463b6e1b575_rw_1920.png" width="1920" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d506509f-3560-45f7-b751-5463b6e1b575_rw_600.png?h=f1e03def9a792f53e3123c1a8652c24f 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d506509f-3560-45f7-b751-5463b6e1b575_rw_1200.png?h=e49e465adcecb4a702146246ae8dbba1 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d506509f-3560-45f7-b751-5463b6e1b575_rw_1920.png?h=f7cf9e52d524fa3c09ef03cbde531a9f 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Jelly Fish </span></span><span style="font-family:ysxc; font-weight:500"><span style="color:#000000" class="texteditor-inline-color">Illustration</span></span><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600"></span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color">(Drawn on Procreate)</span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 51">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d444cdb6-7c5c-44a3-815b-6ab0ebb39ffe.png?h=8d2cc1d44b736116f92406ed8d4fb26b">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/d444cdb6-7c5c-44a3-815b-6ab0ebb39ffe_rw_1920.png" width="1920" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d444cdb6-7c5c-44a3-815b-6ab0ebb39ffe_rw_600.png?h=e2be52dc319c029ecea2d41efb4d46c4 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d444cdb6-7c5c-44a3-815b-6ab0ebb39ffe_rw_1200.png?h=7086efa0b440e8c382b194e94718979f 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/d444cdb6-7c5c-44a3-815b-6ab0ebb39ffe_rw_1920.png?h=58985e2b579196a2459f4a184d552fc9 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Flamingo </span></span><span style="font-family:ysxc; font-weight:500"><span style="color:#000000" class="texteditor-inline-color">Illustration</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="font-family:ysxc; font-weight:500"><span style="color:#333333" class="texteditor-inline-color">(Drawn on Procreate)</span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 99">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 40px;
+  padding-bottom: 0px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/3fae4386-7745-4d0c-9bc2-c88379b9cad5.png?h=3d686bde82356db4c4e02e2b0ee64cca">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/3fae4386-7745-4d0c-9bc2-c88379b9cad5_rw_1920.png" width="1414" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/3fae4386-7745-4d0c-9bc2-c88379b9cad5_rw_600.png?h=a2f2fde52fcc039dbb0974fa39b95acf 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/3fae4386-7745-4d0c-9bc2-c88379b9cad5_rw_1200.png?h=78dba713821bb65ecea668f8606b9a2e 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/3fae4386-7745-4d0c-9bc2-c88379b9cad5_rw_1920.png?h=a23e52367480b2da78d40bc1cbec4a0f 1414w," sizes="(max-width: 1414px) 100vw, 1414px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Poster&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 101">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 40px;
+  padding-bottom: 0px;
+  width: 45%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/620b6bd0-0cf4-48b4-9f8a-715719f56914.png?h=07e6bcef062e371d084b40b18c461b1e">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/620b6bd0-0cf4-48b4-9f8a-715719f56914_rw_1920.png" width="1410" srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/620b6bd0-0cf4-48b4-9f8a-715719f56914_rw_600.png?h=37c8ce89b79036b4ba03b584bf055001 600w,https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/620b6bd0-0cf4-48b4-9f8a-715719f56914_rw_1200.png?h=3175ac1b968f9fdcf86c44a6708f6b01 1200w,https://pro2-bar-s3-cdn-cf5.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/620b6bd0-0cf4-48b4-9f8a-715719f56914_rw_1920.png?h=c614b7247c49451452186cd15f462d25 1410w," sizes="(max-width: 1410px) 100vw, 1410px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Invite&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 40px;
+  padding-bottom: 0px;
+  width: 40%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/a9c7c837-4f16-4b0b-b634-c9bae08f8d82.png?h=368aea9389006c982c3f2daf962bc295">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/a9c7c837-4f16-4b0b-b634-c9bae08f8d82_rw_1920.png" width="1920" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/a9c7c837-4f16-4b0b-b634-c9bae08f8d82_rw_600.png?h=40853f5a067b6a838cf3a51c6c241f22 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/a9c7c837-4f16-4b0b-b634-c9bae08f8d82_rw_1200.png?h=01cfbc049c2d5cd8cb2744283e0ba15c 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/a9c7c837-4f16-4b0b-b634-c9bae08f8d82_rw_1920.png?h=e16dbd2ae883ba4183351cbb22f9def4 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Show Ticket&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></p></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 500000000">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 40%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/82357ffd-5525-4a1e-8821-a5010ba6b8b4.png?h=025926f25fddc9e583b4672acd2e54ec">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/82357ffd-5525-4a1e-8821-a5010ba6b8b4_rw_600.png" width="500" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/82357ffd-5525-4a1e-8821-a5010ba6b8b4_rw_600.png?h=230cebe6da835fc83e5e71cfa39eb006 500w," sizes="(max-width: 500px) 100vw, 500px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Product Branding&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span><br></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 500000000">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 40%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/8c858412-1dbb-45f3-9254-b61fdf53b5b0.png?h=f19ed37ca44e53cb235f4b8e68cef485">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/8c858412-1dbb-45f3-9254-b61fdf53b5b0_rw_600.png" width="500" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/8c858412-1dbb-45f3-9254-b61fdf53b5b0_rw_600.png?h=33fefc26896c7d352eb6e49dc6e3c9c8 500w," sizes="(max-width: 500px) 100vw, 500px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Product Branding&nbsp;</span></span></span></p><p><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span><br></p></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree editable js-editable js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1414000000">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/39713b6e-5e75-4593-86f4-7d0fa4d42fdf.png?h=2a11017bfc6ba779d9630edf764803fb">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/39713b6e-5e75-4593-86f4-7d0fa4d42fdf_rw_1920.png" width="1414" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/39713b6e-5e75-4593-86f4-7d0fa4d42fdf_rw_600.png?h=e496cc1c1d692a55b2a3f4ec7e7a4005 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/39713b6e-5e75-4593-86f4-7d0fa4d42fdf_rw_1200.png?h=db967af66b3a3181327270c64e3a875a 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/39713b6e-5e75-4593-86f4-7d0fa4d42fdf_rw_1920.png?h=a7f62d3b57a7db2cc23c2250fafb1d78 1414w," sizes="(max-width: 1414px) 100vw, 1414px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div style="text-align:center;"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Infographic&nbsp;</span></span></span></div><div style="text-align:center;"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span><br></div></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1414000000">
+        
+        <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+  
+ 
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/92af7cc7-9505-463a-8e98-628335070751.png?h=dda5dee9a07d4d4cd544f2a477e6b36a">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./graphic-design_files/92af7cc7-9505-463a-8e98-628335070751_rw_1920.png" width="1414" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/92af7cc7-9505-463a-8e98-628335070751_rw_600.png?h=91af456cf9aad9252c2aaf228dc472dd 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/92af7cc7-9505-463a-8e98-628335070751_rw_1200.png?h=cf5e95e6e85cdf2411e574da75e130c0 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/92af7cc7-9505-463a-8e98-628335070751_rw_1920.png?h=ac81405b530758682a604b5d2e6803ff 1414w," sizes="(max-width: 1414px) 100vw, 1414px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div style="text-align:center"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:600">Infographic&nbsp;</span></span></span></div><div style="text-align:center"><span style="font-size:12px" class="texteditor-inline-fontsize"><span style="color:#000000" class="texteditor-inline-color"><span style="color:#333333" class="texteditor-inline-color"><span style="font-family:ysxc; font-weight:500">(Created on Photoshop)</span></span></span></span></div></div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="back-to-top js-editable-target editable" data-hover-hint="backToTop">
+          <a href="https://saakshichawla.github.io/graphic-design-1#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-editable-target editable js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="https://saakshichawla.github.io/graphic-design-1#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer js-editable-target editable" data-hover-hint="footer">
+                <div class="footer-text">
+                  Powered by <a href="http://portfolio.adobe.com/" target="_blank">Adobe Portfolio</a>
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":9,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5e721671a187c511f69b742c7639e044a5b7e85af2ad208d294c6","theme":{"name":"marta"},"pageTransition":true,"linkTransition":true,"disableDownload":true,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false},"googleAnalytics":{"trackingCode":"UA-179267406-1","anonymization":false}};</script>
+  <script type="text/javascript" src="./graphic-design_files/translations"></script>
+  <script type="text/javascript" src="./graphic-design_files/main.js.download"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"><div data-slide-id="0" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/c8844482-db0e-44ca-b680-521a9c319c43/794a7c84-6dc3-4fc1-84a4-615868f97992.png?h=26ece6694cce750ee6deeed779806a7b"></div></div></div>
+      </div>
+    </div>
+  </div><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"><div data-slide-id="0" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./graphic-design_files/794a7c84-6dc3-4fc1-84a4-615868f97992.png"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
